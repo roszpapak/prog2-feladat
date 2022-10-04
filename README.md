@@ -9,17 +9,26 @@ megegyezik (a típusuktól függetlenül)! Definiálja felül a toString() metó
 adatait az alábbi formában adja vissza (egy sorban, idézőjelek nélkül):
 „<cím>, 1:<arányszám>[ (<név>[, <név>]...)]” (pl. „Debrecen, 1:20000 (Piac u., Nagytemplom,
 DE Főépület)”)! (Segítség: lásd a String.join() metódust.)
+
+
+
 2. Egészítse ki a Térkép osztályt egy nagybetűsít() nevű publikus logikai metódussal, amelynek
 segítségével nagybetűssé alakíthatók a névjegyzékben szereplő nevek kezdőbetűi! Felteheti, hogy
 minden név tartalmaz legalább egy karaktert. A metódus adjon vissza igazat, ha volt kisbetűvel kezdődő
 név a névjegyzékben (azaz a metódus módosította a térképet), különben pedig hamisat! (Segítség: lásd a
 List interfész get() és set(), a String osztály charAt() és substring(), valamint a
 Character osztály isLowerCase() és toUpperCase() metódusait.)
+
+
+
 3. A térképek természetes rendezettsége a címük szerint lexikografikusan növekvő sorrendben legyen
 értelmezve! Ha két térképnek azonos a címe, akkor közülük a részletesebb (nagyobb méretarányú)
 kerüljön előrébb a rendezettségi sorrendben (az 1:1000 méretarányú térkép részletesebb, mint az
 1:10000 méretarányú)! Ha a méretarányok is megegyeznek, akkor a nagyobb névjegyzékkel rendelkező
 térkép kerüljön előrébb (azaz amelyikben több név szerepel)!
+
+
+
 4. Származtasson a Térkép osztályból egy TematikusTérkép osztályt szintén a kartográfia
 csomagban! A tematikus térképekről tárolni szeretnénk még azok témáját is (sztringként). Az új adattag
 csak a kartográfia csomagban látszódjon! Készítsen az osztályhoz egy olyan konstruktort,
@@ -30,6 +39,9 @@ felül a nagybetűsít() metódust is úgy, hogy a térkép névjegyzékében sz
 kívül a térkép témájának kezdőbetűjét is alakítsa nagybetűssé! A metódus visszatérési értéke továbbra is
 akkor legyen igaz, ha módosította a térképet, azaz vagy a névjegyzékben szereplő nevek valamelyike,
 vagy a téma kisbetűvel kezdődött!
+
+
+
 5. Adott az alábbi interfész a térképKiadó csomagban:
 public interface TérképTár
 {
@@ -46,6 +58,8 @@ public java.util.List<Térkép> térképek(boolean csakTematikus, int nevekSzám
 // csak egyszer fordulhat elő a teljes névjegyzékben!
 public java.util.Collection<String> teljesNévjegyzék(String cím);
 }
+
+
 
 Készítse el az Atlasz osztályt a kartográfia csomagban, amely a megjegyzéseknek megfelelően
 implementálja a TérképTár interfészt! Az osztály nem tartalmazhat nyilvános adattagokat! Figyeljen
