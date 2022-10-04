@@ -1,4 +1,4 @@
-Készítse el a Térkép osztályt a kartográfia csomagban! A térképekről tárolni szeretnénk a
+1.Készítse el a Térkép osztályt a kartográfia csomagban! A térképekről tárolni szeretnénk a
 címüket, azaz hogy mit ábrázolnak (sztring), a valós méretekhez viszonyított méretarányukhoz tartozó
 arányszámot (egész) és egy névjegyzéket (sztringek listája). Az osztály adattagjai legyenek védett
 láthatóságúak! Készítsen az osztályhoz egy konstruktort, amelynek segítségével mindhárom
