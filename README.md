@@ -7,3 +7,7 @@ Magyarország;1:1100000;
 Magyarország;1:1100000;;domborzat
 
 Kincses térkép;1:1000;házikó:kincs:nagy tölgyfa
+
+
+
+https://arato.inf.unideb.hu/panovics.janos/beugrok_Java.pdf
