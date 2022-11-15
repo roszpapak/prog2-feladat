@@ -1,12 +1,25 @@
-Debrecen;1:20000;Piac u.:Nagytemplom:DE Főépület
+public static void kiirToFile(Collection<Flotta> flottas) throws IOException {
+        int i = 1;
+        for(var flotta : flottas){
+            File myObj = new File("lista"+i+".txt");
+            flotta.kiir("lista"+i+".txt");
+            i++;
+        }
+    }
 
-Föld;1:200000000;Európa:Ázsia:Afrika:Amerika:Ausztrália:Antarktisz;Édesvízkészletek
+    public static void novel(Collection<Legitarsasag> legitarsasags,int db){
 
-Magyarország;1:1100000;
+        for (Iterator<Legitarsasag> iterator = legitarsasags.iterator(); iterator.hasNext();) {
+            Legitarsasag legitarsasag = iterator.next();
+            for(int i = 0 ; i < legitarsasag.repulogepList.size();i++){
 
-Magyarország;1:1100000;;domborzat
+                if(legitarsasag.repulogepList.get(i).getClass() == Utasszallito.class &&
+                        legitarsasag.repulogepList.get(i).getGyarto().equalsIgnoreCase("Airbus")){
+                    ((Utasszallito) legitarsasag.repulogepList.get(i)).setFerohely(((Utasszallito) legitarsasag.repulogepList.get(i)).getFerohely()+db);
+                }
 
-Kincses térkép;1:1000;házikó:kincs:nagy tölgyfa
+            }
+        }
 
 
 
