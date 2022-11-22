@@ -3,6 +3,7 @@ https://arato.inf.unideb.hu/panovics.janos/beugrok_Java.pdf
 
 
 Feladat: Szőlőbirtok kezelés.
+
 Egy szőlőbirtok több parcellából áll. Egy parcellát a következő adatok
 jellemeznek:
 Helyrajzi szám, szőlőfajta, tőkeszám
